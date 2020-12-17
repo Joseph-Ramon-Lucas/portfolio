@@ -22,7 +22,6 @@ li a {
     text-align: center;
     padding: 14px 126px;
     text-decoration: #211919 wavy overline underline;
-
 }
 
 
@@ -32,6 +31,9 @@ p {
 #bushy {
     display: flex;
     margin-top: 30px;
+}
+#chomp {
+    display: contents;
 }
 a {
     color: lavenderblush;
