@@ -3,5 +3,5 @@ var app = express();
 app.use('/', express.static(__dirname + '/public'));
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
-    console.log('Your files will be served through this web server')
+    console.log('Your files will be served through this web server. The one on port 5000.')
 });
