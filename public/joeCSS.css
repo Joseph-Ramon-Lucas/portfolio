@@ -3,37 +3,51 @@ body {
     font-family: Quicksand, "JetBrains Mono", monospace;
     size: 100px;
     text-align: center;
+    padding-top: 10px;
+}
+head {
+    background-color: #7544ff;
 }
 h1 {
-    color: orange;
+    color: #00c4ff;
+}
+h3 {
+    text-align: left;
+    alignment: left;
+    color: coral;
 }
 
 title {
     text-align: center ;
 }
 ul {
-    list-style-type:none;
-    margin: 0%;
-    padding: 0%;
+    position: fixed;
+    list-style-type: none;
+    margin: -1%;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
 
 }
-span {
-    float: left;
-}
 
 li {
     float: left;
-
+    width: 25%;
 }
 li a {
+
+    top: 0;
     display: flow-root;
     color: #fcc0e0;
     text-align: center;
-    padding: 14px 126px;
-    text-decoration: #211919 wavy overline underline;
+    padding: 14px 200px;
 
+
+    }
+.le_sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -58,7 +72,7 @@ div {
 
 .glow {
     font-size: 30px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -72,4 +86,34 @@ div {
     to {
         text-shadow: 0 0 20px #1fff00;
     }
+}
+
+.navbar-link {
+    position: relative;
+}
+
+.navbar-title {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.parallax {
+    background-image: url("joeSuit.jpg");
+    width: 100%;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("snowyDelphia.jpg");
+    min-height: 700px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
