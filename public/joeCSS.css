@@ -1,5 +1,5 @@
 body {
-    background-color: #181C25;
+    background-color: #181c25;
     font-family: Quicksand, "JetBrains Mono", monospace;
     size: 100px;
     text-align: center;
@@ -9,6 +9,7 @@ head {
     background-color: #7544ff;
 }
 h1 {
+    margin-top: 5%;
     color: #00c4ff;
 }
 h3 {
@@ -23,11 +24,19 @@ title {
 ul {
     position: fixed;
     list-style-type: none;
-    margin: -1%;
+    margin-top: -20px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #333333;
 
+}
+ul.bottom_nav {
+    position: fixed;
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    overflow: hidden;
+    background-color: #333333;
 }
 
 li {
