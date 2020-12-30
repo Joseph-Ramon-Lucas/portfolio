@@ -9,8 +9,12 @@ head {
     background-color: #7544ff;
 }
 h1 {
+    font-size: 50px;
     margin-top: 5%;
     color: #00c4ff;
+}
+h2 {
+    color: #0090ff;
 }
 h3 {
     text-align: left;
@@ -33,10 +37,12 @@ ul {
 ul.bottom_nav {
     position: fixed;
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding-bottom: 0;
     overflow: hidden;
     background-color: #333333;
+    bottom: 0;
+    display: flow-root;
 }
 
 li {
@@ -50,7 +56,6 @@ li a {
     color: #fcc0e0;
     text-align: center;
     padding: 14px 200px;
-
 
     }
 .le_sticky {
@@ -75,12 +80,30 @@ p {
 a {
     color: lavenderblush;
 }
-div {
-    padding: 20px 50px 20px 50px;
-}
+div.welcomeText{
 
+    position: absolute;
+    background-color: #191f3c;
+    margin-top: 15%;
+    margin-bottom: 30%;
+    margin-left: 40%;
+    margin-right: 30%;
+    text-align: center;
+
+
+}
+div.welcomeBG{
+    background-image: url("joe_welcome_bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+}
 .glow {
-    font-size: 30px;
+    font-size: 50px;
     color: #ffffff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
