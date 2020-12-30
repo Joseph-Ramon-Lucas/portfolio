@@ -89,18 +89,19 @@ div.welcomeText{
     margin-left: 40%;
     margin-right: 30%;
     text-align: center;
+    background-size: cover;
 
 
 }
 div.welcomeBG{
-    background-image: url("joe_welcome_bg.png");
+    background-image: url("joe_welcome_bg2.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
-    min-height: 1000px;
+    min-height: 2000px;
 }
 .glow {
     font-size: 50px;
