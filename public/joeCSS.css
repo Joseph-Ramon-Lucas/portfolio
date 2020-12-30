@@ -1,6 +1,6 @@
 body {
     background-color: #181c25;
-    font-family: Quicksand, "JetBrains Mono", monospace;
+    font-family: "Quicksand", "JetBrains Mono", monospace;
     size: 100px;
     text-align: center;
     padding-top: 10px;
@@ -29,7 +29,7 @@ ul {
     position: fixed;
     list-style-type: none;
     margin-top: -20px;
-    padding: 0;
+
     overflow: hidden;
     background-color: #333333;
 
@@ -38,16 +38,18 @@ ul.bottom_nav {
     position: fixed;
     list-style-type: none;
     margin-bottom: 0px;
-    padding-bottom: 0;
+    padding: 14px 100px;
     overflow: hidden;
     background-color: #333333;
     bottom: 0;
     display: flow-root;
 }
 
+
 li {
     float: left;
     width: 25%;
+    text-align: center;
 }
 li a {
 
@@ -80,14 +82,45 @@ p {
 a {
     color: lavenderblush;
 }
+span.material-icons {
+    margin-left:-30px;
+}
+
+#contact{
+    margin-top: 70%;
+    padding-bottom: 10%;
+    padding-left: 0%;
+    margin-left: 40%;
+    align-items: center;
+    list-style-type: none;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+}
+
+#contactList{
+    text-align: center;
+    position: absolute;
+    bottom: -75%;
+    left:25%;
+    transform: translate(0, -50%);
+    list-style-type: circle;
+    padding: 14px 5%;
+}
+#contactListElement{
+    width: 50%;
+    justify-content: left;
+}
+#contactListElement2{
+    width: 50%;
+    justify-content: right;
+}
 div.welcomeText{
 
     position: absolute;
     background-color: #191f3c;
-    margin-top: 15%;
-    margin-bottom: 30%;
-    margin-left: 40%;
-    margin-right: 30%;
+    margin: 20% 30% 30% 35%;
     text-align: center;
     background-size: cover;
 
@@ -100,8 +133,13 @@ div.welcomeBG{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
-    min-height: 2000px;
+    height: 100%;
+    min-height: 1020px;
+}
+
+.content {
+    display: flex;
+    margin: 0;
 }
 .glow {
     font-size: 50px;
@@ -123,9 +161,11 @@ div.welcomeBG{
 
 .navbar-link {
     position: relative;
+
 }
 
 .navbar-title {
+    text-align: center;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
