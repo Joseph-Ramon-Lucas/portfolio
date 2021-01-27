@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Joseph-Ramon-Lucas/portfolio#readme",
   "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
     "express": "^4.17.1"
   }
 }

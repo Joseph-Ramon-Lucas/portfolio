@@ -37,7 +37,7 @@ ul {
 ul.bottom_nav {
     position: fixed;
     list-style-type: none;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding: 14px 100px;
     overflow: hidden;
     background-color: #333333;
@@ -102,11 +102,15 @@ span.material-icons {
 #contactList{
     text-align: center;
     position: absolute;
-    bottom: -75%;
-    left:25%;
-    transform: translate(0, -50%);
+    margin: auto;
+    width: 15cm;
+    height: 1cm;
+    transform: translate(0, -90%);
     list-style-type: circle;
     padding: 14px 5%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #contactListElement{
     width: 50%;
@@ -123,6 +127,10 @@ div.welcomeText{
     margin: 20% 30% 30% 35%;
     text-align: center;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
 
 
 }

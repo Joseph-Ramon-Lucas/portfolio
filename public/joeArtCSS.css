@@ -1,0 +1,37 @@
+body {
+    background-color: #181c25;
+    font-family: "Quicksand", "JetBrains Mono", monospace;
+    size: 100px;
+}
+
+head {
+    background-color: #7544ff;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #00c4ff;
+}
+ul {
+    color: bisque;
+    display:flex;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    border:red dotted 1px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li {
+    display:flex;
+    padding:0.5cm;
+    margin:0.5cm;
+    border:red solid 1px;
+}
+
+.headBar {
+     text-align: center;
+     display:flex;
+ }
