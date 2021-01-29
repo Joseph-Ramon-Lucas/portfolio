@@ -12,7 +12,7 @@ h1 {
     font-size: 50px;
     color: #00c4ff;
 }
-ul {
+.art {
     color: bisque;
     display:flex;
     margin:0;
@@ -24,13 +24,47 @@ ul {
     flex-wrap: wrap;
 }
 
-li {
+.artli {
     display:flex;
     padding:0.5cm;
     margin:0.5cm;
     border:red solid 1px;
 }
 
+.graphic{
+    display: flex;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    border:red dotted 1px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+
+}
+.graphicli {
+    display: flex;
+
+/*    border: yellow solid 1px;*/
+
+}
+.coolimg{
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform .15s;
+    padding:10px;
+}
+
+.coolimg:hover {
+    filter: brightness(50%);
+    transform: scale(1.065);
+}
+.coolink {
+    display: flex;
+    position: center;
+}
 .headBar {
      text-align: center;
      display:flex;
