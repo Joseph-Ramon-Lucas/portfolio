@@ -21,30 +21,69 @@ h3 {
     alignment: left;
     color: coral;
 }
+text{
+    color: bisque;
+}
+p {
+    color: bisque;
+}
 
 title {
     text-align: center ;
 }
-ul {
-    position: fixed;
-    list-style-type: none;
-    margin-top: -20px;
+/*ul {*/
+/*    position: fixed;*/
+/*    list-style-type: none;*/
+/*    margin-top: -20px;*/
 
+/*    overflow: hidden;*/
+/*    background-color: #333333;*/
+
+/*}*/
+
+
+#topnav {
+    position: fixed;
+    padding: 14px 100px;
     overflow: hidden;
     background-color: #333333;
-
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-ul.bottom_nav {
+#bottom_nav {
     position: fixed;
-    list-style-type: none;
-    margin-bottom: 10px;
     padding: 14px 100px;
     overflow: hidden;
     background-color: #333333;
     bottom: 0;
-    display: flow-root;
+    left:0;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fcc0e0;
 }
 
+.navbar-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fcc0e0;
+    text-decoration: none;
+}
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-title {
+    text-align: center;
+}
 
 li {
     float: left;
@@ -55,7 +94,7 @@ li a {
 
     top: 0;
     display: flow-root;
-    color: #fcc0e0;
+
     text-align: center;
     padding: 14px 200px;
 
@@ -64,11 +103,6 @@ li a {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-}
-
-
-p {
-    color: bisque;
 }
 #bushy {
     display: flex;
@@ -84,45 +118,52 @@ a {
 }
 span.material-icons {
     margin-left:-30px;
+    margin-right: 5px;
 }
 
 #contact{
-    margin-top: 70%;
-    padding-bottom: 10%;
-    padding-left: 0%;
-    margin-left: 40%;
+    /*width: 100px;*/
+    /*margin-top: 10px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*list-style-type: none;*/
+    /*overflow: hidden;*/
+    /*text-align: center;*/
+    /*background-size: cover;*/
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    list-style-type: none;
-    float: left;
-    overflow: hidden;
-    text-align: center;
-    background-size: cover;
+    justify-content: center;
+
 }
 
 #contactList{
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    width: 15cm;
-    height: 1cm;
-    transform: translate(0, -90%);
-    list-style-type: circle;
-    padding: 14px 5%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    /*text-align: center;*/
+    /*margin: auto;*/
+    /*width: 15cm;*/
+    /*height: 1cm;*/
+    /*transform: translate(0, -90%);*/
+    /*list-style-type: circle;*/
+    /*padding: 14px 5%;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    color:wheat;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 #contactListElement{
-    width: 50%;
-    justify-content: left;
-}
-#contactListElement2{
-    width: 50%;
-    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 div.welcomeText{
-
-    position: absolute;
+    /*position: absolute;*/
     background-color: #191f3c;
     margin: 20% 30% 30% 35%;
     text-align: center;
@@ -130,9 +171,6 @@ div.welcomeText{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
-
-
 }
 div.welcomeBG{
     background-image: url("joe_welcome_bg2.png");
@@ -140,6 +178,7 @@ div.welcomeBG{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
     width: 100%;
     height: 100%;
     min-height: 1020px;
@@ -167,17 +206,7 @@ div.welcomeBG{
     }
 }
 
-.navbar-link {
-    position: relative;
 
-}
-
-.navbar-title {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
 
 .parallax {
     background-image: url("joeSuit.jpg");
